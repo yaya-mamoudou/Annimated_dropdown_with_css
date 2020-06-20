@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navBar{
+    margin: 2rem auto;
+    width: 80vw;
+    display: flex;  
+}
+.navBar .block{
+    width: calc(80vw / 4);
+}
+li{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 1rem;
+}
+li:hover{
+    cursor: pointer;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 0vh;
+    transition: all 1s;
+    background-color: chocolate;
+}
+.dropdown li:hover{
+    background-color: rgb(235, 146, 83);
+}
+.navBar .block .item{
+    background-color: brown;
+}
+.navBar .block .item:hover{
+    background-color: rgb(128, 33, 33);
+}
+ .one:hover .dropdown,.two:hover .dropdown,.three:hover .dropdown,.four:hover .dropdown{
+    height: 78%;
+}
